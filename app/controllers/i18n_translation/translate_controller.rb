@@ -36,7 +36,7 @@ module I18nTranslation
 
     # GET /translate/reload
     def reload
-      Translate::Keys.files = nil
+      I18nTranslation::Translate::Keys.files = nil
       redirect_to action: 'index'
     end
 

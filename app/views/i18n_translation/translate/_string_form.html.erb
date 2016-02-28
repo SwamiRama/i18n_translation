@@ -1,0 +1,35 @@
+<%
+	from_text = lookup(from_locale, key)
+	to_text = lookup(to_locale, key)
+	line_size = 100
+	n_lines = n_lines(from_text, line_size)
+	field_name = "key[#{key}]"
+%>
+
+<div class="translation single-translation" >    
+<% if from_text.present? %>
+	<% if from_text.starts_with?(" ") || from_text.ends_with?(" ")%>
+      <%= simple_format("&rarr;" + h(from_text) + "&larr;", :class => "translation-text" ) %>
+    <% else %>
+      <%= simple_format(h(from_text), :class => "translation-text") %>
+    <% end  %>	
+<% end %>
+<p class="edit-form">
+<% if n_lines > 1 %>
+	<%= text_area_tag(field_name, to_text, :size => "#{line_size}x#{n_lines}", :id => key, :class=>'edit-field') %>
+<% else %>
+	<%= text_field_tag(field_name, to_text, :size => line_size, :id => key, :class=>'edit-field') %>
+<% end %>
+</p>
+<div class="error-text"></div>
+<p>
+	<em>
+		<%= translate_link(key, from_text, @from_locale, @to_locale) %>
+		<br/>
+		<strong>Key:</strong><%=h key %><br/>
+		<% if @files[key] %>
+			<strong>File:</strong><%= @files[key].join("<br/>") %>
+			<% end %>
+	</em>
+</p>
+</div>  

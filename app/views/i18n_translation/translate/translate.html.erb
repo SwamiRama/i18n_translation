@@ -1,2 +1,12 @@
-<h1>Translate#translate</h1>
-<p>Find me in app/views/i18n_translation/translate/translate.html.erb</p>
+<div id="container">
+  <% if @page_title -%>
+  <h1><%=h @page_title %></h1><% end -%>
+  <% [:notice, :error].each do |message| %>
+  <%if flash[message] %>
+  <div id="<%= message %>">
+    <span><%= h(flash[message]) if flash[message] %></span>
+  </div>
+  <% end %>
+  <% end %>
+  <%= yield %>
+</div>

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = I18nTranslation::VERSION
   s.authors     = ["Jimmi"]
   s.email       = ["jimmi@rl-hosting.de"]
-  s.homepage    = "asdf"
+  s.homepage    = "https://github.com/SwamiRama/i18n_translation"
   s.summary     = "asdf."
   s.description = "asdf."
   s.license     = "MIT"

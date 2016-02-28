@@ -1,0 +1,3 @@
+= I18nTranslation
+
+This project rocks and uses MIT-LICENSE.

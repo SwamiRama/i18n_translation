@@ -43,7 +43,7 @@ module I18nTranslation
     private
 
     def initialize_keys
-      @files = Translate::Keys.files
+      @files = I18nTranslation::Translate::Keys.files
       @keys = (@files.keys.map(&:to_s) + Translate::Keys.new.i18n_keys(@from_locale)).uniq
       @keys.reject! do |key|
         from_text = lookup(@from_locale, key)

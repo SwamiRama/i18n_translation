@@ -1,5 +1,5 @@
 require_dependency 'i18n_translation/application_controller'
-require_dependency "#{Rails.root}/lib/i18n_translation/translate/keys" 
+require_dependency "#{Rails.root}/lib/i18n_translation/translate/keys"
 
 module I18nTranslation
   class TranslateController < ApplicationController
@@ -27,7 +27,7 @@ module I18nTranslation
     # POST /translate
     def translate
       processed_parameters = process_array_parameters(params[:key])
-      I18n.backend.store_translations(@to_locale, Translate::Keys.to_deep_hash(processed_parameters))
+      I18n.backend.store_translations(@to_locale, I18nTranslation::Translate::Keys.to_deep_hash(processed_parameters))
       Translate::Storage.new(@to_locale).write_to_file
       Translate::Log.new(@from_locale, @to_locale, params[:key].keys).write_to_file
       force_init_translations # Force reload from YAML file

@@ -4,7 +4,7 @@ module I18nTranslation
     class Keys
       # Allows keys extracted from lookups in files to be cached
       def self.files
-        @@files ||= Translate::Keys.new.files
+        @@files ||= I18nTranslation::Translate::Keys.new.files
       end
 
       # Allows flushing of the files cache
@@ -24,11 +24,11 @@ module I18nTranslation
 
       def i18n_keys(locale)
         I18n.backend.send(:init_translations) unless I18n.backend.initialized?
-        Translate::Keys.to_shallow_hash(I18n.backend.send(:translations)[locale.to_sym]).keys.sort
+        I18nTranslation::Translate::Keys.to_shallow_hash(I18n.backend.send(:translations)[locale.to_sym]).keys.sort
       end
 
       def duplicate_keys
-        Translate::Keys.translated_locales.inject({}) do |missing, locale|
+        I18nTranslation::Translate::Keys.translated_locales.inject({}) do |missing, locale|
           missing[locale] = i18n_keys(I18n.default_locale).map do |key|
             I18n.backend.send(:lookup, locale, key) == I18n.backend.send(:lookup, I18n.default_locale, key) ? key : nil
           end.compact
@@ -37,7 +37,7 @@ module I18nTranslation
       end
 
       def untranslated_keys
-        Translate::Keys.translated_locales.inject({}) do |missing, locale|
+        I18nTranslation::Translate::Keys.translated_locales.inject({}) do |missing, locale|
           missing[locale] = i18n_keys(I18n.default_locale).map do |key|
             I18n.backend.send(:lookup, locale, key).nil? ? key : nil
           end.compact
@@ -47,8 +47,8 @@ module I18nTranslation
 
       def missing_keys
         locale = I18n.default_locale; yaml_keys = {}
-        yaml_keys = Translate::Storage.file_paths(locale).inject({}) do |keys, path|
-          keys = keys.deep_merge(Translate::File.new(path).read[locale.to_s])
+        yaml_keys = I18nTranslation::Translate::Storage.file_paths(locale).inject({}) do |keys, path|
+          keys = keys.deep_merge(I18nTranslation::Translate::File.new(path).read[locale.to_s])
         end
         files.reject { |key, _file| self.class.contains_key?(yaml_keys, key) }
       end
@@ -190,7 +190,7 @@ module I18nTranslation
 
       def files_to_scan
         Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
-          Dir.glob(File.join(Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
+          Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
       end
     end
   end

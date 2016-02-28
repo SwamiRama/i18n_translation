@@ -11,7 +11,7 @@ module I18nTranslation
       def write(keys)
         FileUtils.mkdir_p File.dirname(path)
         File.open(path, 'w') do |file|
-          file.puts keys_to_yaml(Translate::File.deep_stringify_keys(keys))
+          file.puts keys_to_yaml(I18nTranslation::Translate::File.deep_stringify_keys(keys))
         end
       end
 

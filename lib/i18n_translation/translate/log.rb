@@ -22,11 +22,11 @@ module I18nTranslation
       private
 
       def file
-        @file ||= Translate::File.new(file_path)
+        @file ||= I18nTranslation::Translate::File.new(file_path)
       end
 
       def from_texts
-        Translate::File.deep_stringify_keys(Translate::Keys.to_deep_hash(keys.inject({}) do |hash, key|
+        I18nTranslation::Translate::File.deep_stringify_keys(I18nTranslation::Translate::Keys.to_deep_hash(keys.inject({}) do |hash, key|
           hash[key] = I18n.backend.send(:lookup, from_locale, key)
           hash
         end))

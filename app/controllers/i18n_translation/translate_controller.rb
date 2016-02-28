@@ -27,8 +27,8 @@ module I18nTranslation
     def translate
       processed_parameters = process_array_parameters(params[:key])
       I18n.backend.store_translations(@to_locale, I18nTranslation::Translate::Keys.to_deep_hash(processed_parameters))
-      Translate::Storage.new(@to_locale).write_to_file
-      Translate::Log.new(@from_locale, @to_locale, params[:key].keys).write_to_file
+      I18nTranslation::Translate::Storage.new(@to_locale).write_to_file
+      I18nTranslation::Translate::Log.new(@from_locale, @to_locale, params[:key].keys).write_to_file
       force_init_translations # Force reload from YAML file
       flash[:notice] = 'Translations stored'
       redirect_to params.slice(:filter, :sort_by, :key_type, :key_pattern, :text_type, :text_pattern, :translated_text_type, :translated_text_pattern).merge(action: :index)
@@ -44,7 +44,7 @@ module I18nTranslation
 
     def initialize_keys
       @files = I18nTranslation::Translate::Keys.files
-      @keys = (@files.keys.map(&:to_s) + Translate::Keys.new.i18n_keys(@from_locale)).uniq
+      @keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
       @keys.reject! do |key|
         from_text = lookup(@from_locale, key)
         # When translating from one language to another, make sure there is a text to translate from.
@@ -213,7 +213,7 @@ module I18nTranslation
         if value.is_a?(String)
           reconstructed_hash[key] = value
         elsif value.is_a?(Hash)
-          reconstructed_hash[key] = Translate::Keys.arraylize(value)
+          reconstructed_hash[key] = I18nTranslation::Translate::Keys.arraylize(value)
         end
       end
       reconstructed_hash

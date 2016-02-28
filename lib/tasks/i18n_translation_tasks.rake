@@ -36,7 +36,7 @@ namespace :translate do
   desc 'Show duplicate keys for locale LOCALE'
   task duplicates: :environment do
     from_locale = I18n.default_locale
-    duplicates = Translate::Keys.new.duplicate_keys
+    duplicates = I18nTranslation::Translate::Keys.new.duplicate_keys
 
     messages = []
     duplicates.each do |locale, keys|
@@ -57,7 +57,7 @@ namespace :translate do
   desc 'Show untranslated keys for locale LOCALE'
   task untranslated: :environment do
     from_locale = I18n.default_locale
-    untranslated = Translate::Keys.new.untranslated_keys
+    untranslated = I18nTranslation::Translate::Keys.new.untranslated_keys
 
     messages = []
     untranslated.each do |locale, keys|
@@ -77,7 +77,7 @@ namespace :translate do
 
   desc 'Show I18n keys that are missing in the config/locales/default_locale.yml YAML file'
   task missing: :environment do
-    missing = Translate::Keys.new.missing_keys.inject([]) do |keys, (key, filename)|
+    missing = I18nTranslation::Translate::Keys.new.missing_keys.inject([]) do |keys, (key, filename)|
       keys << "#{key} in \t  #{filename} is missing"
     end
     puts missing.present? ? missing.join("\n") : 'No missing translations in the default locale file'
@@ -87,16 +87,16 @@ namespace :translate do
   task remove_obsolete_keys: :environment do
     I18n.backend.send(:init_translations)
     master_locale = ENV['LOCALE'] || I18n.default_locale
-    Translate::Keys.translated_locales.each do |locale|
+    I18nTranslation::Translate::Keys.translated_locales.each do |locale|
       texts = {}
-      Translate::Keys.new.i18n_keys(locale).each do |key|
+      I18nTranslation::Translate::Keys.new.i18n_keys(locale).each do |key|
         if I18n.backend.send(:lookup, master_locale, key).to_s.present?
           texts[key] = I18n.backend.send(:lookup, locale, key)
         end
       end
       I18n.backend.send(:translations)[locale] = nil # Clear out all current translations
-      I18n.backend.store_translations(locale, Translate::Keys.to_deep_hash(texts))
-      Translate::Storage.new(locale).write_to_file
+      I18n.backend.store_translations(locale, I18nTranslation::Translate::Keys.to_deep_hash(texts))
+      I18nTranslation::Translate::Storage.new(locale).write_to_file
     end
   end
 
@@ -108,7 +108,7 @@ namespace :translate do
     locale = new_translations.keys.first
 
     overwrites = false
-    Translate::Keys.to_shallow_hash(new_translations[locale]).keys.each do |key|
+    I18nTranslation::Translate::Keys.to_shallow_hash(new_translations[locale]).keys.each do |key|
       new_text = key.split('.').inject(new_translations[locale]) { |hash, sub_key| hash[sub_key] }
       existing_text = I18n.backend.send(:lookup, locale.to_sym, key)
       next unless existing_text && new_text != existing_text
@@ -119,7 +119,7 @@ namespace :translate do
 
     if !overwrites || ENV['OVERWRITE']
       I18n.backend.store_translations(locale, new_translations[locale])
-      Translate::Storage.new(locale).write_to_file
+      I18nTranslation::Translate::Storage.new(locale).write_to_file
     end
   end
 
@@ -151,7 +151,7 @@ namespace :translate do
 
     start_at = Time.now
     translations = {}
-    Translate::Keys.new.i18n_keys(ENV['FROM']).each do |key|
+    I18nTranslation::Translate::Keys.new.i18n_keys(ENV['FROM']).each do |key|
       from_text = I18n.backend.send(:lookup, ENV['FROM'], key).to_s
       to_text = I18n.backend.send(:lookup, ENV['TO'], key)
       next unless !from_text.blank? && to_text.blank?
@@ -165,7 +165,7 @@ namespace :translate do
         # Google translate sometimes replaces {{foobar}} with (()) foobar. We skip these
         if translation !~ /\(\(\)\)/
           puts "'#{translation[0, 40]}'"
-          I18n.backend.store_translations(ENV['TO'].to_sym, Translate::Keys.to_deep_hash(key => translation))
+          I18n.backend.store_translations(ENV['TO'].to_sym, I18nTranslation::Translate::Keys.to_deep_hash(key => translation))
         else
           puts "SKIPPING since interpolations were messed up: '#{translation[0, 40]}'"
         end
@@ -175,13 +175,13 @@ namespace :translate do
     end
 
     puts "\nTime elapsed: #{(((Time.now - start_at) / 60) * 10).to_i / 10.to_f} minutes"
-    Translate::Storage.new(ENV['TO'].to_sym).write_to_file
+    I18nTranslation::Translate::Storage.new(ENV['TO'].to_sym).write_to_file
   end
 
   desc "List keys that have changed I18n texts between YAML file ENV['FROM_FILE'] and YAML file ENV['TO_FILE']. Set ENV['VERBOSE'] to see changes"
   task changed: :environment do
-    from_hash = Translate::Keys.to_shallow_hash(Translate::File.new(ENV['FROM_FILE']).read)
-    to_hash = Translate::Keys.to_shallow_hash(Translate::File.new(ENV['TO_FILE']).read)
+    from_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::File.new(ENV['FROM_FILE']).read)
+    to_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::File.new(ENV['TO_FILE']).read)
     from_hash.each do |key, from_value|
       next unless (to_value = to_hash[key]) && to_value != from_value
       key_without_locale = key[/^[^.]+\.(.+)$/, 1]

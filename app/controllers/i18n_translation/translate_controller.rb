@@ -1,5 +1,4 @@
 require_dependency 'i18n_translation/application_controller'
-require_dependency "#{Rails.root}/lib/i18n_translation/translate/keys"
 
 module I18nTranslation
   class TranslateController < ApplicationController

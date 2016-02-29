@@ -189,11 +189,8 @@ module I18nTranslation
       end
 
       def files_to_scan
-        puts '_'*100
-        puts I18nTranslation::Translate::Storage.root_dir.to_s
-        puts '_'*100
-        Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
-          Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
+        Dir.glob(::File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
+          Dir.glob(::File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
       end
     end
   end

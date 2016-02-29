@@ -16,7 +16,7 @@ module I18nTranslation
       end
 
       def self.root_dir
-        Rails.root
+        Rails.root.to_s
       end
 
       private

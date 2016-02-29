@@ -48,7 +48,7 @@ module I18nTranslation
       def missing_keys
         locale = I18n.default_locale; yaml_keys = {}
         yaml_keys = I18nTranslation::Translate::Storage.file_paths(locale).inject({}) do |keys, path|
-          keys = keys.deep_merge(I18nTranslation::Translate::File.new(path).read[locale.to_s])
+          keys = keys.deep_merge(I18nTranslation::Translate::TranslationFile.new(path).read[locale.to_s])
         end
         files.reject { |key, _file| self.class.contains_key?(yaml_keys, key) }
       end
@@ -189,8 +189,8 @@ module I18nTranslation
       end
 
       def files_to_scan
-        Dir.glob(::File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
-          Dir.glob(::File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
+        Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
+          Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
       end
     end
   end

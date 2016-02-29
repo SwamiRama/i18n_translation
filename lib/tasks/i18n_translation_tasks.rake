@@ -180,8 +180,8 @@ namespace :translate do
 
   desc "List keys that have changed I18n texts between YAML file ENV['FROM_FILE'] and YAML file ENV['TO_FILE']. Set ENV['VERBOSE'] to see changes"
   task changed: :environment do
-    from_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::File.new(ENV['FROM_FILE']).read)
-    to_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::File.new(ENV['TO_FILE']).read)
+    from_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::TranslationFile.new(ENV['FROM_FILE']).read)
+    to_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::TranslationFile.new(ENV['TO_FILE']).read)
     from_hash.each do |key, from_value|
       next unless (to_value = to_hash[key]) && to_value != from_value
       key_without_locale = key[/^[^.]+\.(.+)$/, 1]

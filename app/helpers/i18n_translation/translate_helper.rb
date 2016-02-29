@@ -10,14 +10,14 @@ module I18nTranslation
           type = label = item
         end
         if type.to_s == selected_value.to_s
-          filter << "<i>#{label}</i>"
+          filter << "<div class='btn btn-success'>#{label}</div>"
         else
           link_params = params.merge(param_name.to_s => type)
           link_params['page'] = nil if param_name.to_s != 'page'
-          filter << link_to(label, link_params)
+          filter << link_to(label, link_params, {class: 'btn btn-default'})
         end
       end
-      filter.join(' | ')
+      filter.join('</br> ')
     end
 
     def n_lines(text, line_size)

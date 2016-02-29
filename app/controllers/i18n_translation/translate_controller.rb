@@ -30,7 +30,7 @@ module I18nTranslation
       I18nTranslation::Translate::Log.new(@from_locale, @to_locale, params[:key].keys).write_to_file
       force_init_translations # Force reload from YAML file
       flash[:notice] = 'Translations stored'
-      redirect_to params.slice(:filter, :sort_by, :key_type, :key_pattern, :text_type, :text_pattern, :translated_text_type, :translated_text_pattern).merge(action: :index)
+      redirect_to url_for(params.slice(:filter, :sort_by, :key_type, :key_pattern, :text_type, :text_pattern, :translated_text_type, :translated_text_pattern).merge(action: :index))
     end
 
     # GET /translate/reload

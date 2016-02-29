@@ -24,7 +24,6 @@ Array.prototype.diff =
     }
     return a.unique();
   };
-
 // Return new array with duplicate values removed
 Array.prototype.unique =
   function() {
@@ -40,8 +39,6 @@ Array.prototype.unique =
     }
     return a;
   };
-
-
 var source_ids = [];
 
 function googleCallback(response) {
@@ -96,7 +93,6 @@ function checkErrors() {
     item.removeClassName("translation-error")
     item.select('.error-text')[0].innerHTML = ""
   });
-
   $$('.single-translation').each(function(item) {
     var val = item.select('.edit-field')[0].value
     if (!val.blank()) {
@@ -127,21 +123,18 @@ function testAndSave() {
   if (errors.length == 0) {
     document.forms["translate_form"].submit();
   } else {
+    console.log(errors);
     alert("Some translations have errors. Please review and correct errors before saving.")
   }
 }
-
 /*
 prototypeUtils.js from http://jehiah.com/
 Licensed under Creative Commons.
 version 1.0 December 20 2005
-
 Contains:
 + Form.Element.setValue()
 + unpackToForm()
-
 */
-
 /* Form.Element.setValue("fieldname/id","valueToSet") */
 Form.Element.setValue = function(element, newValue) {
   element_id = element;
@@ -155,7 +148,6 @@ Form.Element.setValue = function(element, newValue) {
   var method = element.tagName.toLowerCase();
   var parameter = Form.Element.SetSerializers[method](element, newValue);
 }
-
 Form.Element.SetSerializers = {
   input: function(element, newValue) {
     switch (element.type.toLowerCase()) {
@@ -170,7 +162,6 @@ Form.Element.SetSerializers = {
     }
     return false;
   },
-
   inputSelector: function(element, newValue) {
     fields = document.getElementsByName(element.name);
     for (var i = 0; i < fields.length; i++) {
@@ -179,11 +170,9 @@ Form.Element.SetSerializers = {
       }
     }
   },
-
   textarea: function(element, newValue) {
     element.value = newValue;
   },
-
   select: function(element, newValue) {
     var value = '',
       opt, index = element.selectedIndex;
@@ -212,6 +201,5 @@ onload = function() {
       this.up(".translation").removeClassName("selected");
     });
   });
-
   checkErrors()
 }

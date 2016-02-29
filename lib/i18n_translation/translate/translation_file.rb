@@ -1,7 +1,7 @@
 require 'fileutils'
 module I18nTranslation
   module Translate
-    class File
+    class TranslationFile
       attr_accessor :path
 
       def initialize(path)
@@ -11,7 +11,7 @@ module I18nTranslation
       def write(keys)
         FileUtils.mkdir_p File.dirname(path)
         File.open(path, 'w') do |file|
-          file.puts keys_to_yaml(I18nTranslation::Translate::File.deep_stringify_keys(keys))
+          file.puts keys_to_yaml(I18nTranslation::Translate::TranslationFile.deep_stringify_keys(keys))
         end
       end
 

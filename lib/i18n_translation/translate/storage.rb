@@ -26,9 +26,6 @@ module I18nTranslation
       end
 
       def file_path
-        puts '_'*100
-        puts I18nTranslation::Translate::Storage.root_dir.to_s
-        puts '_'*100
         File.join(I18nTranslation::Translate::Storage.root_dir, 'config', 'locales', "#{locale}.yml")
       end
     end

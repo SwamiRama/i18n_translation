@@ -55,7 +55,7 @@ show_filters << "changed" if @from_locale != @to_locale
 </fieldset>
 
 
-<div class="paging">
+<div class="panel panel-default">
   <%= render :partial => 'pagination', :locals => {:total_entries => @total_entries, :per_page => per_page} %>
 </div>
 

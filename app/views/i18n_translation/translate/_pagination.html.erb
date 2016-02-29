@@ -1,4 +1,4 @@
-<% 
+<%
   # Expects locals:
   #
   # total_entries
@@ -11,7 +11,7 @@
 <% if n_pages > 1 %>
 <h2>Pages:</h2>
 <div class="clearfix">
-	<ul class="paging">
+	<ul class="pagination">
 	  <% (1..n_pages).each do |page_number| %>
 	    <% if current_page == page_number %>
 	      <li class="selected"><%= link_to(page_number, params.merge(:page => page_number), :title => "Page #{page_number}" ) %></li>

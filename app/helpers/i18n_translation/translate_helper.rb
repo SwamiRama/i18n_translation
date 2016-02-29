@@ -40,11 +40,13 @@ module I18nTranslation
     end
 
     def translate_link(key, text, from, to)
+      #TODO delte me
+      return nil
       method = if Translate.app_id
                  'getBingTranslation'
                elsif Translate.api_key
                  'getGoogleTranslation'
-                     end
+               end
       return nil unless method
       link_to_function 'Auto Translate', "#{method}('#{key}', \"#{escape_javascript(text)}\", '#{from}', '#{to}')", style: 'padding: 0; margin: 0;'
     end

@@ -14,15 +14,15 @@
       <%= simple_format(h(from_text), :class => "translation-text") %>
     <% end  %>	
 <% end %>
-<p class="edit-form">
+<div class="edit-form">
 <% if n_lines > 1 %>
 	<%= text_area_tag(field_name, to_text, :size => "#{line_size}x#{n_lines}", :id => key, :class=>'edit-field') %>
 <% else %>
 	<%= text_field_tag(field_name, to_text, :size => line_size, :id => key, :class=>'edit-field') %>
 <% end %>
-</p>
+</div>
 <div class="error-text"></div>
-<p>
+<div>
 	<em>
 		<%= translate_link(key, from_text, @from_locale, @to_locale) %>
 		<br/>
@@ -31,5 +31,5 @@
 			<strong>File:</strong><%= @files[key].join("<br/>") %>
 			<% end %>
 	</em>
-</p>
+</div>
 </div>  

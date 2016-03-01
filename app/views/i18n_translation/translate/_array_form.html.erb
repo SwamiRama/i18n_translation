@@ -18,22 +18,22 @@
 					to_text = Array.new if to_text.blank?
 				%>
 				<li class="single-translation">
-				  <p class="translation-text"><%= from_text_section %></p>
-				  <p class="edit-form" >
+				  <div class="translation-text"><%= from_text_section %></div>
+				  <div class="edit-form" >
 				  <% if n_lines > 1 %>
 					<%= text_area_tag("#{field_name}[#{index}]", to_text[index], :size => "#{line_size}x#{n_lines}", :id => "#{key}[#{index}]", :class=>'edit-field') %>
 				  <% else %>
 					<%= text_field_tag("#{field_name}[#{index}]", to_text[index], :size => line_size, :id => "#{key}[#{index}]", :class=>'edit-field') %>
 				  <% end %>
 				  <%= translate_link("#{key}[#{index}]", from_text_section, @from_locale, @to_locale) %>
-				</p>
+				</div>
 				<div class="error-text"></div>
 				</li>
 			<% end %>
 		</ol>
 
 <% end %>
-<p>
+<div>
 	<em>
 		<br/>
 		<strong>Key:</strong><%=h key %><br/>
@@ -41,5 +41,5 @@
 			<strong>File:</strong><%= @files[key].join("<br/>") %>
 			<% end %>
 	</em>
-</p>
+</div>
 </div>  

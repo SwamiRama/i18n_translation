@@ -45,12 +45,12 @@ show_filters << "changed" if @from_locale != @to_locale
     <%= link_to "clear", params.merge({:text_pattern => nil, :translated_text_pattern => nil, :key_pattern => nil}) %>
   </div>
   <% end %>
-  <p class="hits">
+  <div class="hits">
     Found
     <strong><%= @total_entries %></strong>
     messages
-  </p>
-  <p>
+  </div>
+  <div>
     <%= link_to "Reload messages", translate_reload_path %>
-  </p>
+  </div>
 </fieldset>

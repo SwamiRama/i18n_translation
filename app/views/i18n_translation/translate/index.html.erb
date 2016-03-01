@@ -1,13 +1,9 @@
 <div class="container-fluid">
   <div class="col-lg-3">
-      <%= render 'filter' %>
+    <%= render 'filter' %>
   </div>
 
   <div class="col-lg-9">
-    <div class="">
-      <%= render :partial => 'pagination', :locals => {:total_entries => @total_entries, :per_page => per_page} %>
-    </div>
-
     <% if @total_entries > 0 %>
     <%= form_tag(translate_path, :name => 'translate_form') do %>
     <div>
@@ -24,9 +20,12 @@
         to
         <span class='big-locale'><%= @to_locale %></span>
       </h2>
-      <p class="translate">
+      <div class="">
+        <%= render :partial => 'pagination', :locals => {:total_entries => @total_entries, :per_page => per_page} %>
+      </div>
+      <div class="translate">
         <input onclick="testAndSave();" type="button" value="Save Translations">
-      </p>
+      </div>
       <% @paginated_keys.each do |key| %>
       <%=
         from_text = lookup(@from_locale, key)
@@ -37,9 +36,9 @@
         }
       %>
       <% end %>
-      <p class="translate">
+      <div class="translate">
         <input onclick="testAndSave();" type="button" value="Save Translations">
-      </p>
+      </div>
     </div>
     <% end %>
     <% end %>

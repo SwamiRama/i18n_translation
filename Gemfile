@@ -14,3 +14,4 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 gem 'translate'
 gem "rspec-rails"
+gem "interactor-rails"

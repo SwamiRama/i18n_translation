@@ -34,3 +34,6 @@ bower.json
 # Ignore pow environment settings
 .powenv
 i18n_translation-0.0.1.gem
+
+logfile
+.*

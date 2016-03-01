@@ -8,15 +8,22 @@ module I18nTranslation
     before_filter :init_translations
     before_filter :set_locale
 
+    before_action :initialize_files, only: [:index]
+    before_action :initialize_keys, only: [:index]
+    before_action :filter_by_key_pattern, only: [:index]
+    before_action :filter_by_text_pattern, only: [:index]
+    before_action :filter_by_translated_text_pattern, only: [:index]
+    before_action :filter_by_translated_or_changed, only: [:index]
+    before_action :sort_keys, only: [:index]
+    before_action :paginate_keys, only: [:index]
+
+    helper_method :lookup
+    helper_method :from_locales
+    helper_method :to_locales
+    helper_method :per_page
+
     # GET /translate
     def index
-      initialize_keys
-      filter_by_key_pattern
-      filter_by_text_pattern
-      filter_by_translated_text_pattern
-      filter_by_translated_or_changed
-      sort_keys
-      paginate_keys
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -40,8 +47,11 @@ module I18nTranslation
 
     private
 
-    def initialize_keys
+    def initialize_files
       @files = I18nTranslation::Translate::Keys.files
+    end
+
+    def initialize_keys
       @keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
       @keys.reject! do |key|
         from_text = lookup(@from_locale, key)
@@ -58,7 +68,7 @@ module I18nTranslation
     def lookup(locale, key)
       I18n.backend.send(:lookup, locale, key)
     end
-    helper_method :lookup
+
 
     def from_locales
       # Attempt to get the list of locale from configuration
@@ -67,7 +77,7 @@ module I18nTranslation
       fail StandardError, 'from_locale expected to be an array' if from_loc.class != Array
       from_loc
     end
-    helper_method :from_locales
+
 
     def to_locales
       to_loc = Rails.application.config.to_locales if Rails.application.config.respond_to?(:to_locales)
@@ -75,7 +85,7 @@ module I18nTranslation
       fail StandardError, 'to_locales expected to be an array' if to_loc.class != Array
       to_loc
     end
-    helper_method :to_locales
+
 
     def filter_by_translated_or_changed
       params[:filter] ||= 'all'
@@ -177,7 +187,7 @@ module I18nTranslation
     def per_page
       50
     end
-    helper_method :per_page
+
 
     def init_translations
       I18n.backend.send(:init_translations) unless I18n.backend.initialized?

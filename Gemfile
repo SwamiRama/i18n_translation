@@ -12,5 +12,11 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem 'translate'
-gem "rspec-rails"
+# gem 'translate'
+
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'pry'
+  gem 'sqlite3'
+end

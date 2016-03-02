@@ -17,9 +17,9 @@ describe 'Log' do
     end
 
     it "writes new log file with from texts" do
-      File.exists?(file_path).should be_false
+      File.exist?(file_path).should be_false
       @log.write_to_file
-      File.exists?(file_path).should be_true
+      File.exist?(file_path).should be_true
       Translate::File.new(file_path).read.should == Translate::File.deep_stringify_keys(from_texts)
     end
 

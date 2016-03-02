@@ -3,15 +3,15 @@ require 'rails_helper'
 describe I18nTranslation::Translate::Storage do
   describe "write_to_file" do
     before(:each) do
-      @storage = Translate::Storage.new(:en)
+      @storage = I18nTranslation::Translate::Storage.new(:en)
     end
 
     it "writes all I18n messages for a locale to YAML file" do
       I18n.backend.should_receive(:translations).and_return(translations)
-      @storage.stub!(:file_path).and_return(file_path)
-      file = mock(:file)
+allow(      @storage).to receive_message_chain(:file_path).and_return(file_path)
+      file = double(:file)
       file.should_receive(:write).with(translations)
-      Translate::File.should_receive(:new).with(file_path).and_return(file)
+      I18nTranslation::Translate::TranslationFile.should_receive(:new).with(file_path).and_return(file)
       @storage.write_to_file
     end
 

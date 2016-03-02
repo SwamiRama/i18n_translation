@@ -5,15 +5,16 @@ describe I18nTranslation::TranslateController do
 
   describe "index" do
     before(:each) do
-      controller.stub(:per_page).and_return(1)
-      I18n.backend.stub(:translations).and_return(i18n_translations)
+      # controller.stub_chain(:per_page).and_return(1)
+      allow(controller).to receive_message_chain(:per_page).and_return(1)
+allow(I18n.backend).to receive_message_chain(:translations).and_return(i18n_translations)
       I18n.backend.instance_eval { @initialized = true }
       keys = double(:keys)
-      keys.stub(:i18n_keys).and_return(['vendor.foobar'])
+allow(keys).to receive_message_chain(:i18n_keys).and_return(['vendor.foobar'])
       I18nTranslation::Translate::Keys.should_receive(:new).and_return(keys)
       I18nTranslation::Translate::Keys.should_receive(:files).and_return(files)
-      I18n.stub(:available_locales).and_return([:en, :sv])
-      I18n.stub(:default_locale).and_return(:sv)
+allow(I18n).to receive_message_chain(:available_locales).and_return([:en, :sv])
+allow(I18n).to receive_message_chain(:default_locale).and_return(:sv)
     end
 
     it "shows sorted paginated keys from the translate from locale and extracted keys by default" do

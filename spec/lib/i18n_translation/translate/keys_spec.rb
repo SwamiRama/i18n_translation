@@ -3,9 +3,9 @@ require 'fileutils'
 
 describe 'Keys' do
   before(:each) do
-    I18n.stub!(:default_locale).and_return(:en)
+allow(    I18n).to receive_message_chain(:default_locale).and_return(:en)
     @keys = I18nTranslation::Translate::Keys.new
-    Translate::Storage.stub!(:root_dir).and_return(i18n_files_dir)
+allow(    I18nTranslation::Translate::Storage).to receive_message_chain(:root_dir).and_return(i18n_files_dir)
   end
 
   describe "to_a" do
@@ -33,7 +33,7 @@ describe 'Keys' do
 
   describe "untranslated_keys" do
     before(:each) do
-      I18n.backend.stub!(:translations).and_return(translations)
+allow(      I18n.backend).to receive_message_chain(:translations).and_return(translations)
     end
 
     it "should return a hash with keys with missing translations in each locale" do
@@ -46,7 +46,7 @@ describe 'Keys' do
   describe "missing_keys" do
     before(:each) do
       @file_path = File.join(i18n_files_dir, "config", "locales", "en.yml")
-      Translate::File.new(@file_path).write({
+      I18nTranslation::Translate::TranslationFile.new(@file_path).write({
         :en => {
           :home => {
             :page_title => false,
@@ -64,7 +64,7 @@ describe 'Keys' do
     end
 
     it "should return a hash with keys that are not in the locale file" do
-      @keys.stub!(:files).and_return({
+allow(      @keys).to receive_message_chain(:files).and_return({
         :'home.page_title' => "app/views/home/index.rhtml",
         :'home.intro' => 'app/views/home/index.rhtml',
         :'home.signup' => "app/views/home/_signup.rhtml",
@@ -86,19 +86,19 @@ describe 'Keys' do
           }
         }
       }
-      I18nTranslation::Translate::Keys.contains_key?(hash, "").should be_false
-      I18nTranslation::Translate::Keys.contains_key?(hash, "foo").should be_true
-      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar").should be_true
-      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar.baz").should be_true
-      I18nTranslation::Translate::Keys.contains_key?(hash, :"foo.bar.baz").should be_true
-      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar.baz.bla").should be_false
+      I18nTranslation::Translate::Keys.contains_key?(hash, "").should be false
+      I18nTranslation::Translate::Keys.contains_key?(hash, "foo").should be true
+      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar").should be true
+      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar.baz").should be true
+      I18nTranslation::Translate::Keys.contains_key?(hash, :"foo.bar.baz").should be true
+      I18nTranslation::Translate::Keys.contains_key?(hash, "foo.bar.baz.bla").should be false
     end
   end
 
   describe "translated_locales" do
     before(:each) do
-      I18n.stub!(:default_locale).and_return(:en)
-      I18n.stub!(:available_locales).and_return([:sv, :no, :en, :root])
+allow(      I18n).to receive_message_chain(:default_locale).and_return(:en)
+allow(      I18n).to receive_message_chain(:available_locales).and_return([:sv, :no, :en, :root])
     end
 
     it "returns all avaiable except :root and the default" do

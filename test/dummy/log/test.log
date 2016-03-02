@@ -1256,3 +1256,944 @@ Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (6.8ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/manuel.reischl/Repository/GitHub/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction

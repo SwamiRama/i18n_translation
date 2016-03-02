@@ -1,7 +1,7 @@
 <label for="text_pattern_value" class="control-label">Text</label>
 
 <div class="input-group">
-  <%= select_tag(:text_type, options_for_select(['contains', 'equals'], params[:text_type]), {class: "form-control"}) %>
+  <%= select_tag(:text_type, options_for_select(['contains', 'equals'], params[:text_type]), {class: "form-control select-width"}) %>
   <span class="input-group-addon">Text</span>
   <%= text_field_tag(:text_pattern, params[:text_pattern], :size => 50, :id => "text_pattern_value", :class => "text-default form-control") %>
 </div>

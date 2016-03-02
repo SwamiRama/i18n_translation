@@ -1,7 +1,7 @@
 <label for="translated_text_pattern_value" class="control-label">Translated Text</label>
 
 <div class="input-group">
-  <%= select_tag(:translated_text_type, options_for_select(['contains', 'equals'], params[:translated_text_type]), {class: "form-control"}) %>
+  <%= select_tag(:translated_text_type, options_for_select(['contains', 'equals'], params[:translated_text_type]), {class: "form-control select-width"}) %>
   <span class="input-group-addon">Text</span>
   <%= text_field_tag(:translated_text_pattern, params[:translated_text_pattern], :size => 50, :id => "translated_text_pattern_value", :class => "text-default form-control") %>
 </div>

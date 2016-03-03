@@ -38,7 +38,7 @@ allow(      I18n.backend).to receive_message_chain(:translations).and_return(tra
 
     it "should return a hash with keys with missing translations in each locale" do
       @keys.untranslated_keys.should == {
-        :sv => ['articles.new.page_title', 'categories.flash.created', 'empty']
+        sv: ['articles.new.page_title', 'categories.flash.created', 'empty']
       }
     end
   end
@@ -47,12 +47,12 @@ allow(      I18n.backend).to receive_message_chain(:translations).and_return(tra
     before(:each) do
       @file_path = File.join(i18n_files_dir, "config", "locales", "en.yml")
       I18nTranslation::Translate::TranslationFile.new(@file_path).write({
-        :en => {
-          :home => {
-            :page_title => false,
-            :intro => {
-              :one => "intro one",
-              :other => "intro other"
+        en: {
+          home: {
+            page_title: false,
+            intro: {
+              one: "intro one",
+              other: "intro other"
             }
           }
         }
@@ -80,9 +80,9 @@ allow(      @keys).to receive_message_chain(:files).and_return({
   describe "contains_key?" do
     it "works" do
       hash = {
-        :foo => {
-          :bar => {
-            :baz => false
+        foo: {
+          bar: {
+            baz: false
           }
         }
       }
@@ -126,25 +126,25 @@ allow(      I18n).to receive_message_chain(:available_locales).and_return([:sv, 
 
     def translations
       {
-        :en => {
-          :home => {
-            :about => "This site is about making money"
+        en: {
+          home: {
+            about: "This site is about making money"
           },
-          :articles => {
-           :new => {
-             :page_title => "New Article"
+          articles: {
+           new: {
+             page_title: "New Article"
             }
           },
-          :categories => {
-            :flash => {
-             :created => "Category created"
+          categories: {
+            flash: {
+             created: "Category created"
             }
           },
-          :empty => nil
+          empty: nil
         },
-        :sv => {
-          :home => {
-            :about => false
+        sv: {
+          home: {
+            about: false
           }
         }
       }
@@ -162,14 +162,14 @@ allow(      I18n).to receive_message_chain(:available_locales).and_return([:sv, 
 
   def deep_hash
     {
-      :pressrelease => {
-        :label => {
-          :one => "Pressmeddelande",
-          :other => "Pressmeddelanden"
+      pressrelease: {
+        label: {
+          one: "Pressmeddelande",
+          other: "Pressmeddelanden"
         }
       },
-      :article => "Artikel",
-      :category => ''
+      article: "Artikel",
+      category: ''
     }
   end
 

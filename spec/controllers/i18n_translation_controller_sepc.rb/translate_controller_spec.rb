@@ -27,65 +27,65 @@ allow(I18n).to receive_message_chain(:default_locale).and_return(:sv)
     end
 
     it "can be paginated with the page param" do
-      get_page :index, :page => 2
+      get_page :index, page: 2
       assigns(:files).should == files
       assigns(:paginated_keys).should == ['home.page_title']
     end
 
     it "accepts a key_pattern param with key_type=starts_with" do
-      get_page :index, :key_pattern => 'articles', :key_type => 'starts_with'
+      get_page :index, key_pattern: 'articles', key_type: 'starts_with'
       assigns(:files).should == files
       assigns(:paginated_keys).should == ['articles.new.page_title']
       assigns(:total_entries).should == 1
     end
 
     it "accepts a key_pattern param with key_type=contains" do
-      get_page :index, :key_pattern => 'page_', :key_type => 'contains'
+      get_page :index, key_pattern: 'page_', key_type: 'contains'
       assigns(:files).should == files
       assigns(:total_entries).should == 2
       assigns(:paginated_keys).should == ['articles.new.page_title']
     end
 
     it "accepts a filter=untranslated param" do
-      get_page :index, :filter => 'untranslated'
+      get_page :index, filter: 'untranslated'
       assigns(:total_entries).should == 2
       assigns(:paginated_keys).should == ['articles.new.page_title']
     end
 
     it "accepts a filter=translated param" do
-      get_page :index, :filter => 'translated'
+      get_page :index, filter: 'translated'
       assigns(:total_entries).should == 1
       assigns(:paginated_keys).should == ['vendor.foobar']
     end
 
     it "accepts a filter=changed param" do
       log = double(:log)
-      old_translations = {:home => {:page_title => "Skapar ny artikel"}}
+      old_translations = {home: {page_title: "Skapar ny artikel"}}
       log.should_receive(:read).and_return(I18nTranslation::Translate::TranslationFile.deep_stringify_keys(old_translations))
       I18nTranslation::Translate::Log.should_receive(:new).with(:sv, :en, {}).and_return(log)
-      get_page :index, :filter => 'changed'
+      get_page :index, filter: 'changed'
       assigns(:total_entries).should == 1
       assigns(:keys).should == ["home.page_title"]
     end
 
     def i18n_translations
       HashWithIndifferentAccess.new({
-        :en => {
-          :vendor => {
-            :foobar => "Foo Baar"
+        en: {
+          vendor: {
+            foobar: "Foo Baar"
           }
         },
-        :sv => {
-          :articles => {
-            :new => {
-              :page_title => "Skapa ny artikel"
+        sv: {
+          articles: {
+            new: {
+              page_title: "Skapa ny artikel"
             }
           },
-          :home => {
-            :page_title => "Välkommen till I18n"
+          home: {
+            page_title: "Välkommen till I18n"
           },
-          :vendor => {
-            :foobar => "Fobar"
+          vendor: {
+            foobar: "Fobar"
           }
         }
       })
@@ -105,12 +105,12 @@ allow(I18n).to receive_message_chain(:default_locale).and_return(:sv)
       session[:from_locale] = :sv
       session[:to_locale] = :en
       translations = {
-        :articles => {
-          :new => {
-            :title => "New Article"
+        articles: {
+          new: {
+            title: "New Article"
           }
         },
-        :category => "Category"
+        category: "Category"
       }
       key_param = {'articles.new.title' => "New Article", "category" => "Category"}
       I18n.backend.should_receive(:store_translations).with(:en, translations)

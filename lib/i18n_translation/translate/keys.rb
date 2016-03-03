@@ -62,9 +62,9 @@ module I18nTranslation
       # Example:
       #
       # hash = {
-      #   :foo => {
-      #     :bar => {
-      #       :baz => 1
+      #   foo: {
+      #     bar: {
+      #       baz: 1
       #     }
       #   }
       # }
@@ -85,9 +85,9 @@ module I18nTranslation
       # Convert something like:
       #
       # {
-      #  :pressrelease => {
-      #    :label => {
-      #      :one => "Pressmeddelande"
+      #  pressrelease: {
+      #    label: {
+      #      one: "Pressmeddelande"
       #    }
       #   }
       # }
@@ -116,9 +116,9 @@ module I18nTranslation
       # to:
       #
       # {
-      #  :pressrelease => {
-      #    :label => {
-      #      :one => "Pressmeddelande"
+      #  pressrelease: {
+      #    label: {
+      #      one: "Pressmeddelande"
       #    }
       #   }
       # }

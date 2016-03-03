@@ -3,5 +3,5 @@
 <div class="input-group">
   <%= select_tag(:key_type, options_for_select([["contains", 'contains'], ["starts with", 'starts_with']], params[:key_type]), {class: "form-control select-width"}) %>
   <span class="input-group-addon">key</span>
-  <%= text_field_tag(:key_pattern, params[:key_pattern], :size => 50, :id => "key_pattern_value", :class => "text-default form-control") %>
+  <%= text_field_tag(:key_pattern, params[:key_pattern], size: 50, id: "key_pattern_value", class: "text-default form-control") %>
 </div>

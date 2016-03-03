@@ -21,9 +21,9 @@
           <div class="translation-text"><%= from_text_section %></div>
           <div class="edit-form" >
             <% if n_lines > 1 %>
-              <%= text_area_tag("#{field_name}[#{index}]", to_text[index], :size => "#{line_size}x#{n_lines}", :id => "#{key}[#{index}]", :class=>'form-control') %>
+              <%= text_area_tag("#{field_name}[#{index}]", to_text[index], size: "#{line_size}x#{n_lines}", id: "#{key}[#{index}]", class: 'form-control') %>
             <% else %>
-              <%= text_field_tag("#{field_name}[#{index}]", to_text[index], :size => line_size, :id => "#{key}[#{index}]", :class=>'form-control') %>
+              <%= text_field_tag("#{field_name}[#{index}]", to_text[index], size: line_size, id: "#{key}[#{index}]", class: 'form-control') %>
             <% end %>
             <%= translate_link("#{key}[#{index}]", from_text_section, @from_locale, @to_locale) %>
           </div>

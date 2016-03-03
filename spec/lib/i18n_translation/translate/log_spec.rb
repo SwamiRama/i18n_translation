@@ -25,7 +25,7 @@ describe 'Log' do
 
     it "merges from texts with current texts in log file and re-writes the log file" do
       @log.write_to_file
-      I18n.backend.store_translations(:sv, {:category => "Kategori ny"})
+      I18n.backend.store_translations(:sv, {category: "Kategori ny"})
       @log.keys = ['category']
       @log.write_to_file
       Translate::File.new(file_path).read['category'].should == "Kategori ny"
@@ -37,10 +37,10 @@ describe 'Log' do
 
     def from_texts
       {
-        :article => {
-          :title => "En artikel"
+        article: {
+          title: "En artikel"
         },
-        :category => "Kategori"
+        category: "Kategori"
       }
     end
   end

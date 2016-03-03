@@ -5,14 +5,14 @@
 
   <div class="col-lg-9">
     <% if @total_entries > 0 %>
-    <%= form_tag(translate_path, :name => 'translate_form') do %>
+    <%= form_tag(translate_path, name: 'translate_form') do %>
     <div>
-      <%= hidden_field_tag(:filter, params[:filter], :id => "hid_filter") %>
-      <%= hidden_field_tag(:sort_by, params[:sort_by], :id => "hid_sort_by") %>
-      <%= hidden_field_tag(:key_type, params[:key_type], :id => "hid_key_type") %>
-      <%= hidden_field_tag(:key_pattern, params[:key_pattern], :id => "hid_key_pattern") %>
-      <%= hidden_field_tag(:text_type, params[:text_type], :id => "hid_text_type") %>
-      <%= hidden_field_tag(:text_pattern, params[:text_pattern], :id => "hid_text_pattern") %>
+      <%= hidden_field_tag(:filter, params[:filter], id: "hid_filter") %>
+      <%= hidden_field_tag(:sort_by, params[:sort_by], id: "hid_sort_by") %>
+      <%= hidden_field_tag(:key_type, params[:key_type], id: "hid_key_type") %>
+      <%= hidden_field_tag(:key_pattern, params[:key_pattern], id: "hid_key_pattern") %>
+      <%= hidden_field_tag(:text_type, params[:text_type], id: "hid_text_type") %>
+      <%= hidden_field_tag(:text_pattern, params[:text_pattern], id: "hid_text_pattern") %>
     </div>
     <div class="translations">
       <h2>Translations from
@@ -21,7 +21,7 @@
         <span class='big-locale'><%= @to_locale %></span>
       </h2>
       <div class="">
-        <%= render :partial => 'pagination', :locals => {:total_entries => @total_entries, :per_page => per_page} %>
+        <%= render partial: 'pagination', locals: {total_entries: @total_entries, per_page: per_page} %>
       </div>
       <div class="translate">
         <input onclick="testAndSave();" type="button" value="Save Translations" class="btn">
@@ -32,9 +32,9 @@
       <%=
         from_text = lookup(@from_locale, key)
         render (from_text.is_a?(Array) ? 'array_form' : 'string_form'), {
-          :from_locale => @from_locale,
-          :to_locale => @to_locale,
-          :key => key,
+          from_locale: @from_locale,
+          to_locale: @to_locale,
+          key: key,
         }
       %>
     </div>
@@ -47,7 +47,7 @@
     <% end %>
 
     <div class="paging">
-      <%= render :partial => 'pagination', :locals => {:total_entries => @total_entries, :per_page => per_page} %>
+      <%= render partial: 'pagination', locals: {total_entries: @total_entries, per_page: per_page} %>
     </div>
   </div>
 </div>

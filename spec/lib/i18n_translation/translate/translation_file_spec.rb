@@ -18,11 +18,11 @@ describe I18nTranslation::Translate::TranslationFile do
 
     def translations
       {
-        :en => {
-          :article => {
-            :title => "One Article"
+        en: {
+          article: {
+            title: "One Article"
           },
-          :category => "Category"
+          category: "Category"
         }
       }
     end
@@ -31,11 +31,11 @@ describe I18nTranslation::Translate::TranslationFile do
   describe "deep_stringify_keys" do
     it "should convert all keys in a hash to strings" do
       I18nTranslation::Translate::TranslationFile.deep_stringify_keys({
-        :en => {
-          :article => {
-            :title => "One Article"
+        en: {
+          article: {
+            title: "One Article"
           },
-          :category => "Category"
+          category: "Category"
         }
       }).should == {
         "en" => {

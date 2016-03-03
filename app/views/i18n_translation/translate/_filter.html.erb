@@ -42,7 +42,7 @@ show_filters << "changed" if @from_locale != @to_locale
   </div>
   <div class="form-group">
     <%= submit_tag "Search" %>
-    <%= link_to "clear", params.merge({text_pattern: nil, translated_text_pattern: nil, key_pattern: nil}) %>
+    <%= sanitize link_to "clear", params.merge({text_pattern: nil, translated_text_pattern: nil, key_pattern: nil}) %>
   </div>
   <% end %>
   <div class="hits">

@@ -13,9 +13,9 @@
 	<ul class="pagination">
 	  <% (1..n_pages).each do |page_number| %>
 	    <% if current_page == page_number %>
-	      <li class="selected"><%= link_to(page_number, params.merge(page: page_number), title: "Page #{page_number}" ) %></li>
+	      <li class="selected"><%= sanitize link_to(page_number, params.merge(page: page_number), title: "Page #{page_number}" ) %></li>
 	    <% else %>
-	      <li><%= link_to(page_number, params.merge(page: page_number), title: "Page #{page_number}") %></li>
+	      <li><%= sanitize link_to(page_number, params.merge(page: page_number), title: "Page #{page_number}") %></li>
 	    <% end %>
 	  <% end %>
 	</ul>

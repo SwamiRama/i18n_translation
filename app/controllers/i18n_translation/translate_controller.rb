@@ -71,19 +71,19 @@ module I18nTranslation
 
 
     def from_locales
-      # Attempt to get the list of locale from configuration
-      from_loc = Rails.application.config.from_locales if Rails.application.config.respond_to?(:from_locales)
-      return I18n.available_locales if from_loc.blank?
-      fail StandardError, 'from_locale expected to be an array' if from_loc.class != Array
-      from_loc
+      locales(:from_locales)
     end
 
 
     def to_locales
-      to_loc = Rails.application.config.to_locales if Rails.application.config.respond_to?(:to_locales)
-      return I18n.available_locales if to_loc.blank?
-      fail StandardError, 'to_locales expected to be an array' if to_loc.class != Array
-      to_loc
+      locales(:to_locales)
+    end
+
+    def locales(local)
+      loc = Rails.application.config.send(local) if Rails.application.config.respond_to?(local)
+      return I18n.available_locales if loc.blank?
+      fail StandardError, 'to_locales expected to be an array' if local.class != Array
+      loc
     end
 
 
@@ -128,29 +128,23 @@ module I18nTranslation
     end
 
     def filter_by_text_pattern
-      return if params[:text_pattern].blank?
-      @keys.reject! do |key|
-        case params[:text_type]
-        when 'contains'
-          !lookup(@from_locale, key).present? || !lookup(@from_locale, key).to_s.downcase.index(params[:text_pattern].downcase)
-        when 'equals'
-          !lookup(@from_locale, key).present? || lookup(@from_locale, key).to_s.downcase != params[:text_pattern].downcase
-        else
-          fail "Unknown text_type '#{params[:text_type]}'"
-        end
-      end
+      filter_by_pattern(:text_pattern, :text_type)
     end
 
     def filter_by_translated_text_pattern
-      return if params[:translated_text_pattern].blank?
+      filter_by_pattern(:translate_text_pattern, :translated_text_type)
+    end
+
+    def filter_by_pattern(pattern, type)
+      return if params[pattern].blank?
       @keys.reject! do |key|
-        case params[:translated_text_type]
+        case params[type]
         when 'contains' then
-          !lookup(@to_locale, key).present? || !lookup(@to_locale, key).to_s.downcase.index(params[:translated_text_pattern].downcase)
+          !lookup(@to_locale, key).present? || !lookup(@to_locale, key).to_s.downcase.index(params[pattern].downcase)
         when 'equals' then
-          !lookup(@to_locale, key).present? || lookup(@to_locale, key).to_s.downcase != params[:translated_text_pattern].downcase
+          !lookup(@to_locale, key).present? || lookup(@to_locale, key).to_s.downcase != params[pattern].downcase
         else
-          fail "Unknown translated_text_type '#{params[:translated_text_type]}'"
+          fail "Unknown translated_text_type '#{params[type]}'"
         end
       end
     end

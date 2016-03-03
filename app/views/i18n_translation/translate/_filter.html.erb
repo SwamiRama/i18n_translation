@@ -18,7 +18,7 @@ show_filters << "changed" if @from_locale != @to_locale
     </div>
   </div>
 
-  <%= form_tag(params, :method => :get, class: 'form') do %>
+  <%= form_tag(params, method: :get, class: 'form') do %>
   <div class="form-group">
     <%= hidden_field_tag(:filter, params[:filter]) %>
     <%= hidden_field_tag(:sort_by, params[:sort_by]) %>
@@ -42,7 +42,7 @@ show_filters << "changed" if @from_locale != @to_locale
   </div>
   <div class="form-group">
     <%= submit_tag "Search" %>
-    <%= link_to "clear", params.merge({:text_pattern => nil, :translated_text_pattern => nil, :key_pattern => nil}) %>
+    <%= link_to "clear", params.merge({text_pattern: nil, translated_text_pattern: nil, key_pattern: nil}) %>
   </div>
   <% end %>
   <div class="hits">

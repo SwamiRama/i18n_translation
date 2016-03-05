@@ -37,3 +37,4 @@ i18n_translation-0.0.1.gem
 
 logfile
 .*
+*.log

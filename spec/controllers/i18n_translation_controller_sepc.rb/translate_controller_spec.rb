@@ -5,15 +5,15 @@ describe I18nTranslation::TranslateController do
 
   describe 'index' do
     before(:each) do
-      controller.stub!(:per_page).and_return(1)
-      I18n.backend.stub!(:translations).and_return(i18n_translations)
+      allow(controller).to receive(:per_page).and_return(1)
+      allow(I18n.backend).to receive(:translations).and_return(i18n_translations)
       I18n.backend.instance_eval { @initialized = true }
-      keys = mock(:keys)
-      keys.stub!(:i18n_keys).and_return(['vendor.foobar'])
-      I18nTranslation::Translate::Keys.should_receive(:new).and_return(keys)
-      I18nTranslation::Translate::Keys.should_receive(:files).and_return(files)
-      I18n.stub!(:available_locales).and_return([:en, :de])
-      I18n.stub!(:default_locale).and_return(:de)
+      keys = double(:keys)
+      allow(keys).to receive(:i18n_keys).and_return(['vendor.foobar'])
+      expect(I18nTranslation::Translate::Keys).to receive(:new).and_return(keys)
+      expect(I18nTranslation::Translate::Keys).to receive(:files).and_return(files)
+      allow(I18n).to receive(:available_locales).and_return([:en, :de])
+      allow(I18n).to receive(:default_locale).and_return(:de)
     end
 
     it 'shows sorted paginated keys from the translate from locale and extracted keys by default' do
@@ -59,13 +59,13 @@ describe I18nTranslation::TranslateController do
     end
 
     it 'accepts a filter=changed param' do
-      log = double(:log)
+      log = mock(:log)
       old_translations = { home: { page_title: 'Skapar ny artikel' } }
-      expect(log).to receive(:read).and_return(I18nTranslation::Translate::TranslationFile.deep_stringify_keys(old_translations))
-      expect(I18nTranslation::Translate::Log).to receive(:new).with(:de, :en, {}).and_return(log)
-      get :index, filter: 'changed'
-      expect(assigns(:total_entries)).to eq 3
-      expect(assigns(:keys)).to eq ['articles.new.page_title', 'home.page_title', 'vendor.foobar']
+      log.should_receive(:read).and_return(Translate::TranslationFile.deep_stringify_keys(old_translations))
+      I18nTranslation::Translate::Log.should_receive(:new).with(:sv, :en, {}).and_return(log)
+      get_page :index, filter: 'changed'
+      assigns(:total_entries).should == 1
+      assigns(:keys).should == ['home.page_title']
     end
 
     def i18n_translations
@@ -119,7 +119,7 @@ describe I18nTranslation::TranslateController do
       expect(log).to receive(:write_to_file)
       expect(I18nTranslation::Translate::Log).to receive(:new).with(:de, :en, key_param.keys).and_return(log)
       post :translate, 'key' => key_param
-      response.should be_redirect
+      expect(response).to be_redirect
     end
   end
 end

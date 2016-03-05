@@ -31,12 +31,19 @@ module I18nTranslation
     # POST /translate
     def translate
       processed_parameters = process_array_parameters(params[:key])
-      I18n.backend.store_translations(@to_locale, I18nTranslation::Translate::Keys.to_deep_hash(processed_parameters))
+      I18n.backend.store_translations(
+        @to_locale,
+        I18nTranslation::Translate::Keys.to_deep_hash(processed_parameters)
+      )
       I18nTranslation::Translate::Storage.new(@to_locale).write_to_file
-      I18nTranslation::Translate::Log.new(@from_locale, @to_locale, params[:key].keys).write_to_file
+      I18nTranslation::Translate::Log.new(
+        @from_locale,
+        @to_locale,
+        params[:key].keys
+      ).write_to_file
       force_init_translations # Force reload from YAML file
       flash[:notice] = 'Translations stored'
-      redirect_to url_for(params.slice(:filter, :sort_by, :key_type, :key_pattern, :text_type, :text_pattern, :translated_text_type, :translated_text_pattern).merge(action: :index))
+      redirect_to url_for(slice_params.merge(action: :index))
     end
 
     # GET /translate/reload
@@ -46,6 +53,19 @@ module I18nTranslation
     end
 
     private
+
+    def slice_params
+      params.slice(
+        :filter,
+        :sort_by,
+        :key_type,
+        :key_pattern,
+        :text_type,
+        :text_pattern,
+        :translated_text_type,
+        :translated_text_pattern
+      )
+    end
 
     def initialize_files
       @files = I18nTranslation::Translate::Keys.files
@@ -69,11 +89,9 @@ module I18nTranslation
       I18n.backend.send(:lookup, locale, key)
     end
 
-
     def from_locales
       locales(:from_locales)
     end
-
 
     def to_locales
       locales(:to_locales)
@@ -85,7 +103,6 @@ module I18nTranslation
       fail StandardError, 'to_locales expected to be an array' if local.class != Array
       loc
     end
-
 
     def filter_by_translated_or_changed
       params[:filter] ||= 'all'
@@ -181,7 +198,6 @@ module I18nTranslation
     def per_page
       50
     end
-
 
     def init_translations
       I18n.backend.send(:init_translations) unless I18n.backend.initialized?

@@ -3497,3 +3497,31 @@ Processing by I18nTranslation::TranslateController#index as HTML
   Parameters: {"filter"=>"changed"}
   Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
 Completed 200 OK in 12ms (Views: 11.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 13ms (Views: 11.7ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms)

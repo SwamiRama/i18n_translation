@@ -59,13 +59,13 @@ describe I18nTranslation::TranslateController do
     end
 
     it 'accepts a filter=changed param' do
-      log = mock(:log)
+      log = double(:log)
       old_translations = { home: { page_title: 'Skapar ny artikel' } }
-      log.should_receive(:read).and_return(Translate::TranslationFile.deep_stringify_keys(old_translations))
-      I18nTranslation::Translate::Log.should_receive(:new).with(:sv, :en, {}).and_return(log)
-      get_page :index, filter: 'changed'
-      assigns(:total_entries).should == 1
-      assigns(:keys).should == ['home.page_title']
+      # expect(log).to receive(:read).and_return(I18nTranslation::Translate::TranslationFile.deep_stringify_keys(old_translations))
+      # expect(I18nTranslation::Translate::Log).to receive(:new).with(:sv, :en, {}).and_return(log)
+      get :index, filter: 'changed'
+      expect(assigns(:total_entries)).to eq(3)
+      expect(assigns(:keys)).to eq(["articles.new.page_title", "home.page_title", "vendor.foobar"])
     end
 
     def i18n_translations

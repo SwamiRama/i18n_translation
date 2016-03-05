@@ -12,8 +12,7 @@ source 'https://rubygems.org'
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-# gem 'translate'
-
+gem 'translate'
 
 group :development, :test do
   gem 'rspec-rails'

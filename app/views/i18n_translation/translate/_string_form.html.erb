@@ -16,9 +16,9 @@
     <% end %>
     <div class="edit-form">
       <% if n_lines > 1 %>
-        <%= text_area_tag(field_name, to_text, size: "#{line_size}x#{n_lines}", id: key, class: 'form-control') %>
+        <%= text_area_tag(field_name, to_text, size: "#{line_size}x#{n_lines}", id: key, class: 'form-control edit-field') %>
       <% else %>
-        <%= text_field_tag(field_name, to_text, size: line_size, id: key, class: 'form-control') %>
+        <%= text_field_tag(field_name, to_text, size: line_size, id: key, class: 'form-control edit-field') %>
       <% end %>
     </div>
     <div class="error-text"></div>

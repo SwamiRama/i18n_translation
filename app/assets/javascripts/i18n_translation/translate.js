@@ -123,7 +123,6 @@ function testAndSave() {
   if (errors.length == 0) {
     document.forms["translate_form"].submit();
   } else {
-    console.log(errors);
     alert("Some translations have errors. Please review and correct errors before saving.")
   }
 }

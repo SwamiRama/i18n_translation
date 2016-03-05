@@ -2257,3 +2257,1104 @@ Completed 200 OK in 1ms (Views: 0.3ms)
 Processing by I18nTranslation::TranslateController#translate as HTML
   Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
 Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.7ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 30ms (Views: 28.9ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 7ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 14ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 13.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.7ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 14ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.9ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 8ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 6ms
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 13ms

@@ -1,4 +1,4 @@
-require "rails_helper"
+require 'rails_helper'
 
 # A very simple Rails engine
 module MyEngine
@@ -19,8 +19,8 @@ end
 RSpec.describe MyEngine::WidgetsController, type: :routing do
   routes { MyEngine::Engine.routes }
 
-  it "routes to the list of all widgets" do
-    expect(get: widgets_path).
-      to route_to(controller: "my_engine/widgets", action: "index")
+  it 'routes to the list of all widgets' do
+    expect(get: widgets_path)
+      .to route_to(controller: 'my_engine/widgets', action: 'index')
   end
 end

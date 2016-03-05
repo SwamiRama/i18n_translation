@@ -2197,3 +2197,33 @@ Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+Processing by I18nTranslation::TranslateController#index as HTML
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.1ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"articles", "key_type"=>"starts_with"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"key_pattern"=>"page_", "key_type"=>"contains"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"untranslated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"translated"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+Processing by I18nTranslation::TranslateController#index as HTML
+  Parameters: {"filter"=>"changed"}
+  Rendered /Users/Jimmi/Repository/i18n_translation/app/views/i18n_translation/translate/index.html.erb within layouts/i18n_translation/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+Processing by I18nTranslation::TranslateController#translate as HTML
+  Parameters: {"key"=>{"articles.new.title"=>"New Article", "category"=>"Category"}}
+Completed 500 Internal Server Error in 7ms

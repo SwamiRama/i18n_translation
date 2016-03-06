@@ -5,4 +5,5 @@ module I18nTranslation
   require 'i18n_translation/translate/translation_file'
   require 'i18n_translation/translate/storage'
   require 'i18n_translation/translate/log'
+  require 'i18n_translation/filter'
 end

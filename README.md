@@ -1,3 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/SwamiRama/i18n_translation/badges/gpa.svg)](https://codeclimate.com/github/SwamiRama/i18n_translation)
+[![Test Coverage](https://codeclimate.com/github/SwamiRama/i18n_translation/badges/coverage.svg)](https://codeclimate.com/github/SwamiRama/i18n_translation/coverage)
+[![Issue Count](https://codeclimate.com/github/SwamiRama/i18n_translation/badges/issue_count.svg)](https://codeclimate.com/github/SwamiRama/i18n_translation)
+
 # Translate
 
 Initially, this was a fork of the Gem translate-rails3 (Thanks a lot!)

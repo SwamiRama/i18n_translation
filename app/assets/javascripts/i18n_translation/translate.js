@@ -124,7 +124,6 @@ function testAndSave() {
     document.forms.translate_form.submit();
   } else {
     alert("Some translations have errors. Please review and correct errors before saving.");
-    console.log(errors);
   }
 }
 /*

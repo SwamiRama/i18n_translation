@@ -163,7 +163,6 @@ module I18nTranslation
 
     def process_array_parameters(parameter)
       reconstructed_hash = {}
-
       parameter.each do |key, value|
         if value.is_a?(String)
           reconstructed_hash[key] = value

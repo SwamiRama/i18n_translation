@@ -7,7 +7,7 @@ describe 'Log' do
       I18n.locale = :de
       I18n.backend.store_translations(:de, from_texts)
       keys = I18nTranslation::Translate::Keys.new
-      @log = I18nTranslation::Translate::Log.new(:de, :en, I18nTranslation::Translate::Keys.to_shallow_hash(from_texts).keys)
+      @log = I18nTranslation::Translate::Log.new(:de, :en, I18nTranslation::Translate::Keys.flatten_key(from_texts).keys)
       allow(@log).to receive(:file_path).and_return(file_path)
       FileUtils.rm_f file_path
     end

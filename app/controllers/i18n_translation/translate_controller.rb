@@ -33,7 +33,7 @@ module I18nTranslation
       processed_parameters = process_array_parameters(params[:key])
       I18n.backend.store_translations(
         @to_locale,
-        I18nTranslation::Translate::Keys.to_deep_hash(processed_parameters)
+        I18nTranslation::Translate::Keys.unflatten_key(processed_parameters)
       )
       I18nTranslation::Translate::Storage.new(@to_locale).write_to_file
       I18nTranslation::Translate::Log.new(

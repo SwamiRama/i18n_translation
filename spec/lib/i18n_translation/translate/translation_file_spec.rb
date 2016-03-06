@@ -4,6 +4,7 @@ require 'fileutils'
 describe I18nTranslation::Translate::TranslationFile do
   describe 'write' do
     before(:each) do
+      binding.pry
       @file = I18nTranslation::Translate::TranslationFile.new(file_path)
     end
 

@@ -95,7 +95,7 @@ namespace :translate do
         end
       end
       I18n.backend.send(:translations)[locale] = nil # Clear out all current translations
-      I18n.backend.store_translations(locale, I18nTranslation::Translate::Keys.to_deep_hash(texts))
+      I18n.backend.store_translations(locale, I18nTranslation::Translate::Keys.unflatten_key(texts))
       I18nTranslation::Translate::Storage.new(locale).write_to_file
     end
   end
@@ -108,7 +108,7 @@ namespace :translate do
     locale = new_translations.keys.first
 
     overwrites = false
-    I18nTranslation::Translate::Keys.to_shallow_hash(new_translations[locale]).keys.each do |key|
+    I18nTranslation::Translate::Keys.flatten_key(new_translations[locale]).keys.each do |key|
       new_text = key.split('.').inject(new_translations[locale]) { |hash, sub_key| hash[sub_key] }
       existing_text = I18n.backend.send(:lookup, locale.to_sym, key)
       next unless existing_text && new_text != existing_text
@@ -165,7 +165,7 @@ namespace :translate do
         # Google translate sometimes replaces {{foobar}} with (()) foobar. We skip these
         if translation !~ /\(\(\)\)/
           puts "'#{translation[0, 40]}'"
-          I18n.backend.store_translations(ENV['TO'].to_sym, I18nTranslation::Translate::Keys.to_deep_hash(key => translation))
+          I18n.backend.store_translations(ENV['TO'].to_sym, I18nTranslation::Translate::Keys.unflatten_key(key => translation))
         else
           puts "SKIPPING since interpolations were messed up: '#{translation[0, 40]}'"
         end
@@ -180,8 +180,8 @@ namespace :translate do
 
   desc "List keys that have changed I18n texts between YAML file ENV['FROM_FILE'] and YAML file ENV['TO_FILE']. Set ENV['VERBOSE'] to see changes"
   task changed: :environment do
-    from_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::TranslationFile.new(ENV['FROM_FILE']).read)
-    to_hash = I18nTranslation::Translate::Keys.to_shallow_hash(I18nTranslation::Translate::TranslationFile.new(ENV['TO_FILE']).read)
+    from_hash = I18nTranslation::Translate::Keys.flatten_key(I18nTranslation::Translate::TranslationFile.new(ENV['FROM_FILE']).read)
+    to_hash = I18nTranslation::Translate::Keys.flatten_key(I18nTranslation::Translate::TranslationFile.new(ENV['TO_FILE']).read)
     from_hash.each do |key, from_value|
       next unless (to_value = to_hash[key]) && to_value != from_value
       key_without_locale = key[/^[^.]+\.(.+)$/, 1]

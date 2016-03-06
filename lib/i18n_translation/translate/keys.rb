@@ -24,7 +24,7 @@ module I18nTranslation
 
       def i18n_keys(locale)
         I18n.backend.send(:init_translations) unless I18n.backend.initialized?
-        I18nTranslation::Translate::Keys.to_shallow_hash(I18n.backend.send(:translations)[locale.to_sym]).keys.sort
+        I18nTranslation::Translate::Keys.flatten_key(I18n.backend.send(:translations)[locale.to_sym]).keys.sort
       end
 
       def duplicate_keys
@@ -96,10 +96,10 @@ module I18nTranslation
       #
       #  {'pressrelease.label.one' => "Pressmeddelande"}
       #
-      def self.to_shallow_hash(hash)
+      def self.flatten_key(hash)
         hash.inject({}) do |shallow_hash, (key, value)|
           if value.is_a?(Hash)
-            to_shallow_hash(value).each do |sub_key, sub_value|
+            flatten_key(value).each do |sub_key, sub_value|
               shallow_hash[[key, sub_key].join('.')] = sub_value
             end
           else
@@ -122,7 +122,7 @@ module I18nTranslation
       #    }
       #   }
       # }
-      def self.to_deep_hash(hash)
+      def self.unflatten_key(hash)
         hash.inject({}) do |deep_hash, (key, value)|
           keys = key.to_s.split('.').reverse
           leaf_key = keys.shift
@@ -147,7 +147,7 @@ module I18nTranslation
       # ["elem 1", "elem 2"]
       #
       def self.arraylize(input_hash)
-        input_hash.inject([]) do |constructed_array, (_key, value)|
+        input_hash.inject([]) do |constructed_array, (_, value)|
           constructed_array << value
           constructed_array
         end
@@ -189,7 +189,7 @@ module I18nTranslation
       end
 
       def files_to_scan
-        Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml}')) +
+        Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, '{app,config,lib}', '**', '*.{rb,erb,rhtml,haml}')) +
           Dir.glob(File.join(I18nTranslation::Translate::Storage.root_dir, 'public', 'javascripts', '**', '*.js'))
       end
     end

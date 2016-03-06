@@ -104,15 +104,15 @@ describe 'Keys' do
       end
     end
 
-    describe 'to_deep_hash' do
+    describe 'unflatten_key' do
       it 'convert shallow hash with dot separated keys to deep hash' do
-        expect(I18nTranslation::Translate::Keys.to_deep_hash(shallow_hash)).to eq deep_hash
+        expect(I18nTranslation::Translate::Keys.unflatten_key(shallow_hash)).to eq deep_hash
       end
     end
 
-    describe 'to_shallow_hash' do
+    describe 'flatten_key' do
       it 'converts a deep hash to a shallow one' do
-        expect(I18nTranslation::Translate::Keys.to_shallow_hash(deep_hash)).to eq shallow_hash
+        expect(I18nTranslation::Translate::Keys.flatten_key(deep_hash)).to eq shallow_hash
       end
     end
 

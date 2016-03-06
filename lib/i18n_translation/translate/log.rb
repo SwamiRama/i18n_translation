@@ -26,7 +26,7 @@ module I18nTranslation
       end
 
       def from_texts
-        I18nTranslation::Translate::TranslationFile.deep_stringify_keys(I18nTranslation::Translate::Keys.to_deep_hash(keys.inject({}) do |hash, key|
+        I18nTranslation::Translate::TranslationFile.deep_stringify_keys(I18nTranslation::Translate::Keys.unflatten_key(keys.inject({}) do |hash, key|
           hash[key] = I18n.backend.send(:lookup, from_locale, key)
           hash
         end))

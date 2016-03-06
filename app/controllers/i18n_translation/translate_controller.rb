@@ -17,7 +17,7 @@ module I18nTranslation
     def index
       @files = initialize_files
       @keys = initialize_keys
-      set_filter(@keys)
+      set_filter('all', @keys)
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -25,7 +25,7 @@ module I18nTranslation
     def translated
       @files = initialize_files
       @keys = initialize_keys
-      set_filter(@keys)
+      set_filter('translated', @keys)
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -33,7 +33,7 @@ module I18nTranslation
     def untranslated
       @files = initialize_files
       @keys = initialize_keys
-      set_filter(@keys)
+      set_filter('untranslated', @keys)
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -41,7 +41,7 @@ module I18nTranslation
     def changed
       @files = initialize_files
       @keys = initialize_keys
-      set_filter(@keys)
+      set_filter('changed', @keys)
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -85,11 +85,11 @@ module I18nTranslation
       )
     end
 
-    def set_filter(found_keys)
+    def set_filter(filter, found_keys)
       filter_by_key_pattern(found_keys)
       filter_by_text_pattern(found_keys)
       filter_by_translated_text_pattern(found_keys)
-      filter_by_translated_or_changed(found_keys)
+      filter_by_translated_or_changed(filter, found_keys)
       sort_keys(found_keys)
       paginate_keys(found_keys)
     end
@@ -131,11 +131,10 @@ module I18nTranslation
       loc
     end
 
-    def filter_by_translated_or_changed(found_keys)
-      params[:filter] ||= 'all'
-      return if params[:filter] == 'all'
+    def filter_by_translated_or_changed(filter = 'all', found_keys)
+      return if filter == 'all'
       found_keys.reject! do |key|
-        case params[:filter]
+        case filter
         when 'untranslated'
           lookup(@to_locale, key).present?
         when 'translated'
@@ -152,7 +151,7 @@ module I18nTranslation
           end
           fr.downcase == to.downcase
         else
-          fail "Unknown filter '#{params[:filter]}'"
+          fail "Unknown filter '#{filter}'"
         end
       end
     end

@@ -31,14 +31,6 @@ module I18nTranslation
       n_lines
     end
 
-    def translate_javascript_includes
-      if File.exist?(File.join(Rails.root, 'public', 'javascripts', 'prototype.js'))
-        javascript_include_tag('prototype.js')
-      else
-        javascript_include_tag('http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js')
-      end
-    end
-
     def translate_link(key, text, from, to)
       #TODO delte me
       return nil

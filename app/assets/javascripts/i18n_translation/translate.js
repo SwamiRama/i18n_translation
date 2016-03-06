@@ -1,25 +1,25 @@
 // Return elements which are in A but not in arg0 through argn
 Array.prototype.diff =
   function() {
-    var a1 = this;
+    var _this = this;
     var a = a2 = null;
     var n = 0;
     while (n < arguments.length) {
       a = [];
       a2 = arguments[n];
-      var l = a1.length;
+      var l = _this.length;
       var l2 = a2.length;
       var diff = true;
       for (var i = 0; i < l; i++) {
         for (var j = 0; j < l2; j++) {
-          if (a1[i] === a2[j]) {
+          if (_this[i] === a2[j]) {
             diff = false;
             break;
           }
         }
-        diff ? a.push(a1[i]) : diff = true;
+        diff ? a.push(_this[i]) : diff = true;
       }
-      a1 = a;
+      _this = a;
       n++;
     }
     return a.unique();
@@ -88,42 +88,43 @@ function getBingTranslation(id, text, from_language, to_language) {
 }
 
 function checkErrors() {
-  var errors = []
+  var errors = [];
   $$('.translation-error').each(function(item) {
-    item.removeClassName("translation-error")
-    item.select('.error-text')[0].innerHTML = ""
+    item.removeClassName("translation-error");
+    item.select('.error-text')[0].innerHTML = "";
   });
   $$('.single-translation').each(function(item) {
-    var val = item.select('.edit-field')[0].value
+    var val = item.select('.edit-field')[0].value;
     if (!val.blank()) {
       var patt1 = /%\{[^\{\}]*\}/g;
-      var val_subs = val.match(patt1)
-      var key = item.select('.translation-text')[0].innerHTML
-      var key_subs = key.match(patt1)
+      var val_subs = val.match(patt1);
+      var key = item.select('.translation-text')[0].innerHTML;
+      var key_subs = key.match(patt1);
       if (val_subs == null) {
-        val_subs = []
+        val_subs = [];
       }
       if (key_subs == null) {
-        key_subs = []
+        key_subs = [];
       }
       if (val_subs.sort().join('') != key_subs.sort().join('')) {
-        missing_subs = key_subs.diff(val_subs)
+        missing_subs = key_subs.diff(val_subs);
         item.addClassName("translation-error");
-        errors.push(item)
-        item.select('.error-text')[0].innerHTML = "Missing substitution strings: " + missing_subs.join(', ')
+        errors.push(item);
+        item.select('.error-text')[0].innerHTML = "Missing substitution strings: " + missing_subs.join(', ');
       }
     }
   });
-  return errors
+  return errors;
 }
 
 function testAndSave() {
-  var errors = checkErrors()
+  var errors = checkErrors();
 
   if (errors.length == 0) {
-    document.forms["translate_form"].submit();
+    document.forms.translate_form.submit();
   } else {
-    alert("Some translations have errors. Please review and correct errors before saving.")
+    alert("Some translations have errors. Please review and correct errors before saving.");
+    console.log(errors);
   }
 }
 /*
@@ -146,7 +147,7 @@ Form.Element.setValue = function(element, newValue) {
   }
   var method = element.tagName.toLowerCase();
   var parameter = Form.Element.SetSerializers[method](element, newValue);
-}
+};
 Form.Element.SetSerializers = {
   input: function(element, newValue) {
     switch (element.type.toLowerCase()) {
@@ -182,10 +183,10 @@ Form.Element.SetSerializers = {
       }
     }
   }
-}
+};
 
 function unpackToForm(data) {
-  for (i in data) {
+  for (var i in data) {
     Form.Element.setValue(i, data[i].toString());
   }
 }
@@ -200,5 +201,5 @@ onload = function() {
       this.up(".translation").removeClassName("selected");
     });
   });
-  checkErrors()
-}
+  checkErrors();
+};

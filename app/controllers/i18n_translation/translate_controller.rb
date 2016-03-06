@@ -16,7 +16,7 @@ module I18nTranslation
     # GET /translate
     def index
       @files = initialize_files
-      @keys = initialize_keys
+      @keys = initialize_keys(@files, @from_locale, @to_locale)
       set_filter('all', @keys)
       @total_entries = @keys.size
       @translated_entries
@@ -25,7 +25,7 @@ module I18nTranslation
 
     def translated
       @files = initialize_files
-      @keys = initialize_keys
+      @keys = initialize_keys(@files, @from_locale, @to_locale)
       set_filter('translated', @keys)
       @total_entries = @keys.size
       @page_title = page_title
@@ -33,7 +33,7 @@ module I18nTranslation
 
     def untranslated
       @files = initialize_files
-      @keys = initialize_keys
+      @keys = initialize_keys(@files, @from_locale, @to_locale)
       set_filter('untranslated', @keys)
       @total_entries = @keys.size
       @page_title = page_title
@@ -41,7 +41,7 @@ module I18nTranslation
 
     def changed
       @files = initialize_files
-      @keys = initialize_keys
+      @keys = initialize_keys(@files, @from_locale, @to_locale)
       set_filter('changed', @keys)
       @total_entries = @keys.size
       @page_title = page_title
@@ -90,7 +90,7 @@ module I18nTranslation
       filter_by_key_pattern(found_keys)
       filter_by_text_pattern(found_keys)
       filter_by_translated_text_pattern(found_keys)
-      filter_by_translated_or_changed(filter, found_keys)
+      filter_by_translated_or_changed(filter, found_keys, @from_locale, @to_locale)
       sort_keys(found_keys)
       paginate_keys(found_keys)
     end
@@ -99,13 +99,13 @@ module I18nTranslation
       I18nTranslation::Translate::Keys.files
     end
 
-    def initialize_keys
-      found_keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
+    def initialize_keys(files, from, to)
+      found_keys = (files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(from)).uniq
       found_keys.reject do |key|
-        from_text = lookup(@from_locale, key)
+        from_text = lookup(from, key)
         # When translating from one language to another, make sure there is a text to translate from.
         # The only supported formats are String and Array. We don't support other formats
-        (@from_locale != @to_locale && !from_text.present?) || (from_text.present? && !from_text.is_a?(String) && !from_text.is_a?(Array))
+        (from != to && !from_text.present?) || (from_text.present? && !from_text.is_a?(String) && !from_text.is_a?(Array))
       end
     end
 
@@ -132,19 +132,19 @@ module I18nTranslation
       loc
     end
 
-    def filter_by_translated_or_changed(filter = 'all', found_keys)
+    def filter_by_translated_or_changed(filter = 'all', found_keys, from, to)
       return if filter == 'all'
       found_keys.reject! do |key|
         case filter
         when 'untranslated'
-          lookup(@to_locale, key).present?
+          lookup(to, key).present?
         when 'translated'
-          lookup(@to_locale, key).blank?
+          lookup(to, key).blank?
         when 'changed'
-          lookup(@from_locale, key).to_s == lookup(@to_locale, key).to_s
+          lookup(from, key).to_s == lookup(to, key).to_s
         when 'list_changed'
-          fr = lookup(@from_locale, key).to_s.squish
-          to = lookup(@to_locale, key).to_s.squish
+          fr = lookup(from, key).to_s.squish
+          to = lookup(to, key).to_s.squish
           if fr.downcase != to.downcase
             p '--'
             p 'c:' + fr

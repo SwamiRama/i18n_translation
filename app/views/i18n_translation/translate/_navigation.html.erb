@@ -25,6 +25,11 @@
         <li class="<%= is_active?(changed_path) %>">
           <%= link_to "Changed", changed_path %>
         </li>
+        <li>
+          <p class="navbar-btn">
+            Sort by: <%= raw sort_by_filter(["key", "text"], 'sort_by') %>
+          </p>
+        </li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">

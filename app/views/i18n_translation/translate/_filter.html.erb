@@ -1,17 +1,8 @@
 <fieldset>
   <legend>Filter</legend>
   <%= form_tag(params, method: :get, class: 'form') do %>
-  <div class="form-group">
-    <%= hidden_field_tag(:filter, params[:filter]) %>
-    <%= hidden_field_tag(:sort_by, params[:sort_by]) %>
-    <label for='languages' class="control-label">Translate from</label>
-    <div class="input-group">
-      <%= select_tag(:from_locale, options_for_select(from_locales, @from_locale.to_sym), {class: "form-control"}) %>
-      <span class="input-group-addon">to</span>
-      <%= select_tag(:to_locale, options_for_select(to_locales, @to_locale.to_sym), {class: "form-control"}) %>
-    </div>
-    <%= submit_tag "Display", {class: 'btn'} %>
-  </div>
+  <%= hidden_field_tag(:filter, params[:filter]) %>
+  <%= hidden_field_tag(:sort_by, params[:sort_by]) %>
 
   <div class="form-group">
     <%= render 'key_filter' %>

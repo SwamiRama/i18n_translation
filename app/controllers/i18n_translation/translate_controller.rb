@@ -19,6 +19,7 @@ module I18nTranslation
       @keys = initialize_keys
       set_filter('all', @keys)
       @total_entries = @keys.size
+      @translated_entries
       @page_title = page_title
     end
 
@@ -100,7 +101,7 @@ module I18nTranslation
 
     def initialize_keys
       found_keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
-      found_keys.reject! do |key|
+      found_keys.reject do |key|
         from_text = lookup(@from_locale, key)
         # When translating from one language to another, make sure there is a text to translate from.
         # The only supported formats are String and Array. We don't support other formats

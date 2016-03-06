@@ -1,4 +1,4 @@
-<%= form_tag(params, method: :get, class: 'form') do %>
+<%= form_tag(params, method: :get, class: 'form navbar-form navbar-left') do %>
 <%= hidden_field_tag(:filter, params[:filter]) %>
 <%= hidden_field_tag(:sort_by, params[:sort_by]) %>
 
@@ -19,10 +19,8 @@
 </div>
 
 <div class="form-group">
-  <%= submit_tag "Search" %>
-  <%= sanitize link_to "clear", params.merge({text_pattern: nil, translated_text_pattern: nil, key_pattern: nil}) %>
+  <%= submit_tag "Search", class: 'btn' %>
+  <%= sanitize link_to "clear", params.merge({text_pattern: nil, translated_text_pattern: nil, key_pattern: nil}), class: 'btn' %>
+  <%= link_to "Reload messages", translate_reload_path, class: 'btn' %>
 </div>
 <% end %>
-<div>
-  <%= link_to "Reload messages", translate_reload_path %>
-</div>

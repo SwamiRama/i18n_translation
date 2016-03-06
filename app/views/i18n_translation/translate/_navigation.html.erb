@@ -25,14 +25,12 @@
         <li class="<%= is_active?(changed_path) %>">
           <%= link_to "Changed", changed_path %>
         </li>
-        <li class="divider-vertical"></li>
-        <li>
+        <li class="divider-vertical">
           <p class="navbar-btn">
             Sort by:
             <%= raw sort_by_filter(["key", "text"], 'sort_by') %>
           </p>
         </li>
-        <li class="divider-vertical"></li>
         <li>
           <div class="navbar-text">
             Found

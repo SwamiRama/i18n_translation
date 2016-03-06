@@ -1,11 +1,12 @@
-<%= render 'navigation' %>
 <div class="container-fluid">
-  <div class="col-lg-3">
-    <%= render 'filter' %>
+  <div class="row">
+    <div class="col-lg-12">
+      <%= render 'filter' %>
+    </div>
   </div>
-
-  <div class="col-lg-9">
-    <% if @total_entries > 0 %>
+  <div class="row">
+    <div class="col-lg-12">
+      <% if @total_entries > 0 %>
       <%= form_tag(translate_path, name: 'translate_form') do %>
       <div>
         <%= hidden_field_tag(:filter, params[:filter], id: "hid_filter") %>
@@ -30,7 +31,7 @@
 
         <% @paginated_keys.each do |key| %>
         <div class="panel panel-default">
-        <%=
+          <%=
           from_text = lookup(@from_locale, key)
           render (from_text.is_a?(Array) ? 'array_form' : 'string_form'), {
             from_locale: @from_locale,
@@ -38,17 +39,18 @@
             key: key,
           }
         %>
-      </div>
+        </div>
         <% end %>
         <div class="translate">
           <input onclick="testAndSave();" type="button" value="Save Translations" class="btn">
         </div>
       </div>
       <% end %>
-    <% end %>
+      <% end %>
 
-    <div class="paging">
-      <%= render partial: 'pagination', locals: {total_entries: @total_entries, per_page: per_page} %>
+      <div class="paging">
+        <%= render partial: 'pagination', locals: {total_entries: @total_entries, per_page: per_page} %>
+      </div>
     </div>
   </div>
 </div>

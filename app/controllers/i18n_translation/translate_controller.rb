@@ -16,16 +16,19 @@ module I18nTranslation
     # GET /translate
     def index
       @files = initialize_files
-      @keys = I18nTranslation::Filter.new(initialize_keys(@files, @from_locale, @to_locale), params, @from_locale, @to_locale).all_keys
+      init_keys = initialize_keys(@files, @from_locale, @to_locale)
+      @all_entries_size = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).all_keys.size
+      @keys = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).all_keys
       @total_entries = @keys.size
-      @translated_entries
       @page_title = page_title
       @paginated_keys = paginate_keys(@keys)
     end
 
     def translated
       @files = initialize_files
-      @keys = I18nTranslation::Filter.new(initialize_keys(@files, @from_locale, @to_locale), params, @from_locale, @to_locale).translated_keys
+      init_keys = initialize_keys(@files, @from_locale, @to_locale)
+      @all_entries_size = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).all_keys.size
+      @keys = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).translated_keys
       @total_entries = @keys.size
       @page_title = page_title
       @paginated_keys = paginate_keys(@keys)
@@ -33,7 +36,9 @@ module I18nTranslation
 
     def untranslated
       @files = initialize_files
-      @keys = I18nTranslation::Filter.new(initialize_keys(@files, @from_locale, @to_locale), params, @from_locale, @to_locale).untranslated_keys
+      init_keys = initialize_keys(@files, @from_locale, @to_locale)
+      @all_entries_size = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).all_keys.size
+      @keys = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).untranslated_keys
       @total_entries = @keys.size
       @page_title = page_title
       @paginated_keys = paginate_keys(@keys)
@@ -41,7 +46,9 @@ module I18nTranslation
 
     def changed
       @files = initialize_files
-      @keys = I18nTranslation::Filter.new(initialize_keys(@files, @from_locale, @to_locale), params, @from_locale, @to_locale).changed_keys
+      init_keys = initialize_keys(@files, @from_locale, @to_locale)
+      @all_entries_size = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).all_keys.size
+      @keys = I18nTranslation::Filter.new(init_keys, params, @from_locale, @to_locale).changed_keys
       @total_entries = @keys.size
       @page_title = page_title
       @paginated_keys = paginate_keys(@keys)

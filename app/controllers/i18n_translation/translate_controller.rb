@@ -8,15 +8,6 @@ module I18nTranslation
     before_filter :init_translations
     before_filter :set_locale
 
-    before_action :initialize_files, only: [:index]
-    before_action :initialize_keys, only: [:index]
-    before_action :filter_by_key_pattern, only: [:index]
-    before_action :filter_by_text_pattern, only: [:index]
-    before_action :filter_by_translated_text_pattern, only: [:index]
-    before_action :filter_by_translated_or_changed, only: [:index]
-    before_action :sort_keys, only: [:index]
-    before_action :paginate_keys, only: [:index]
-
     helper_method :lookup
     helper_method :from_locales
     helper_method :to_locales
@@ -24,6 +15,33 @@ module I18nTranslation
 
     # GET /translate
     def index
+      @files = initialize_files
+      @keys = initialize_keys
+      set_filter(@keys)
+      @total_entries = @keys.size
+      @page_title = page_title
+    end
+
+    def translated
+      @files = initialize_files
+      @keys = initialize_keys
+      set_filter(@keys)
+      @total_entries = @keys.size
+      @page_title = page_title
+    end
+
+    def untranslated
+      @files = initialize_files
+      @keys = initialize_keys
+      set_filter(@keys)
+      @total_entries = @keys.size
+      @page_title = page_title
+    end
+
+    def changed
+      @files = initialize_files
+      @keys = initialize_keys
+      set_filter(@keys)
       @total_entries = @keys.size
       @page_title = page_title
     end
@@ -67,13 +85,22 @@ module I18nTranslation
       )
     end
 
+    def set_filter(found_keys)
+      filter_by_key_pattern(found_keys)
+      filter_by_text_pattern(found_keys)
+      filter_by_translated_text_pattern(found_keys)
+      filter_by_translated_or_changed(found_keys)
+      sort_keys(found_keys)
+      paginate_keys(found_keys)
+    end
+
     def initialize_files
-      @files = I18nTranslation::Translate::Keys.files
+      I18nTranslation::Translate::Keys.files
     end
 
     def initialize_keys
-      @keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
-      @keys.reject! do |key|
+      found_keys = (@files.keys.map(&:to_s) + I18nTranslation::Translate::Keys.new.i18n_keys(@from_locale)).uniq
+      found_keys.reject! do |key|
         from_text = lookup(@from_locale, key)
         # When translating from one language to another, make sure there is a text to translate from.
         # The only supported formats are String and Array. We don't support other formats
@@ -104,10 +131,10 @@ module I18nTranslation
       loc
     end
 
-    def filter_by_translated_or_changed
+    def filter_by_translated_or_changed(found_keys)
       params[:filter] ||= 'all'
       return if params[:filter] == 'all'
-      @keys.reject! do |key|
+      found_keys.reject! do |key|
         case params[:filter]
         when 'untranslated'
           lookup(@to_locale, key).present?
@@ -130,9 +157,9 @@ module I18nTranslation
       end
     end
 
-    def filter_by_key_pattern
+    def filter_by_key_pattern(found_keys)
       return if params[:key_pattern].blank?
-      @keys.reject! do |key|
+      found_keys.reject! do |key|
         case params[:key_type]
         when 'starts_with'
           !key.starts_with?(params[:key_pattern])
@@ -144,17 +171,17 @@ module I18nTranslation
       end
     end
 
-    def filter_by_text_pattern
-      filter_by_pattern(:text_pattern, :text_type)
+    def filter_by_text_pattern(found_keys)
+      filter_by_pattern(:text_pattern, found_keys, :text_type)
     end
 
-    def filter_by_translated_text_pattern
-      filter_by_pattern(:translate_text_pattern, :translated_text_type)
+    def filter_by_translated_text_pattern(found_keys)
+      filter_by_pattern(:translate_text_pattern, found_keys, :translated_text_type)
     end
 
-    def filter_by_pattern(pattern, type)
+    def filter_by_pattern(pattern, found_keys, type)
       return if params[pattern].blank?
-      @keys.reject! do |key|
+      found_keys.reject! do |key|
         case params[type]
         when 'contains' then
           !lookup(@to_locale, key).present? || !lookup(@to_locale, key).to_s.downcase.index(params[pattern].downcase)
@@ -166,13 +193,13 @@ module I18nTranslation
       end
     end
 
-    def sort_keys
+    def sort_keys(found_keys)
       params[:sort_by] ||= 'key'
       case params[:sort_by]
       when 'key'
-        @keys.sort!
+        found_keys.sort!
       when 'text'
-        @keys.sort! do |key1, key2|
+        found_keys.sort! do |key1, key2|
           if lookup(@from_locale, key1).present? && lookup(@from_locale, key2).present?
             lookup(@from_locale, key1).to_s.downcase <=> lookup(@from_locale, key2).to_s.downcase
           elsif lookup(@from_locale, key1).present?
@@ -186,9 +213,9 @@ module I18nTranslation
       end
     end
 
-    def paginate_keys
+    def paginate_keys(found_keys)
       params[:page] ||= 1
-      @paginated_keys = @keys[offset, per_page]
+      @paginated_keys = found_keys[offset, per_page]
     end
 
     def offset

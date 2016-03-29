@@ -11,5 +11,5 @@
 // about supported directives.
 
 //= require i18n_translation/translate
-//= require jquery2
+//= require jquery
 //= require jquery_ujs
